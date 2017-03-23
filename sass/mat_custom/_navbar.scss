@@ -1,0 +1,22 @@
+nav#site-navigation ul {
+  li {
+    position: relative;
+    ul{
+      display: none;
+    }
+    &:hover {
+      ul {
+        display: block;
+        position: absolute;
+        width: 150px;
+        top: 64px;
+        left: 0;
+        background-color: #eeeeee;
+        li {
+          display: block;
+          width: 150px;
+        }
+      }
+    }
+  }
+}
