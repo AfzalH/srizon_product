@@ -1,3 +1,24 @@
+/*!
+Theme Name: Srizon Product
+Theme URI: http://underscores.me/
+Author: Afzal Hossain
+Author URI: https://www.srizon.com
+Description: Showcase Your Software Products
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: srizon_product
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Srizon Product is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6787,19 +6808,42 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
-nav#site-navigation ul li {
+nav#site-navigation ul#primary-menu > li.menu-item-has-children {
   position: relative; }
-  nav#site-navigation ul li ul {
-    display: none; }
-  nav#site-navigation ul li:hover ul {
+  nav#site-navigation ul#primary-menu > li.menu-item-has-children > ul {
     display: block;
     position: absolute;
     width: 150px;
+    opacity: 0;
+    z-index: -1;
+    background-color: #eeeeee;
     top: 64px;
-    left: 0;
-    background-color: #eeeeee; }
-    nav#site-navigation ul li:hover ul li {
+    left: 0; }
+    nav#site-navigation ul#primary-menu > li.menu-item-has-children > ul > li {
       display: block;
-      width: 150px; }
+      width: 150px;
+      line-height: 40px; }
+      nav#site-navigation ul#primary-menu > li.menu-item-has-children > ul > li li {
+        line-height: 36px;
+        padding-left: 5px; }
+        nav#site-navigation ul#primary-menu > li.menu-item-has-children > ul > li li a {
+          font-size: 0.9em; }
+        nav#site-navigation ul#primary-menu > li.menu-item-has-children > ul > li li li {
+          line-height: 32px;
+          padding-left: 10px; }
+          nav#site-navigation ul#primary-menu > li.menu-item-has-children > ul > li li li a {
+            font-size: 0.75em; }
+  nav#site-navigation ul#primary-menu > li.menu-item-has-children:hover ul {
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    z-index: 10; }
+  nav#site-navigation ul#primary-menu > li.menu-item-has-children > a:after {
+    content: '\E313';
+    font-family: 'Material Icons';
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: bottom;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
