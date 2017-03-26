@@ -6871,4 +6871,12 @@ nav#site-navigation a.button-collapse {
   nav#site-navigation a.button-collapse i {
     font-size: 36px; }
 
+span.no-logo {
+  font-size: 16px; }
+
+img.site-logo {
+  height: 64px;
+  padding: 7px 0;
+  width: auto; }
+
 /*# sourceMappingURL=style.css.map */

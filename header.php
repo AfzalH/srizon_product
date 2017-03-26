@@ -24,7 +24,14 @@
 	<header id="masthead" class="site-header" role="banner">
 		<nav id="site-navigation" class="grey lighten-3 main-navigationgrey-text text-darken-2" role="navigation">
 			<div class="nav-wrapper container">
-				<a href="/" id="logo-container" class="brand-logo">Logo Here</a>
+				<?php
+				$site_logo_src = get_theme_mod( 'srizon_product_logo', '' );
+				$site_logo     = '<span class="no-logo">Upload Logo from customizer</span>';
+				if ( trim( $site_logo_src ) ) {
+					$site_logo = '<img class="site-logo" src="' . $site_logo_src . '" alt="Logo" />';
+				}
+				?>
+				<a href="/" id="logo-container" class="brand-logo"><?php echo $site_logo?></a>
 				<?php wp_nav_menu( array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
