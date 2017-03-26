@@ -1,3 +1,4 @@
+$menu_background: #eeeeee;
 nav#site-navigation ul#primary-menu {
   > li.menu-item-has-children {
     position: relative;
@@ -7,7 +8,7 @@ nav#site-navigation ul#primary-menu {
       width: 150px;
       opacity: 0;
       z-index: -1;
-      background-color: #eeeeee;
+      background-color: $menu_background;
       top: 64px;
       left: 0;
       > li {
@@ -46,4 +47,40 @@ nav#site-navigation ul#primary-menu {
       cursor: pointer;
     }
   }
+  li.current-menu-item > a {
+    background-color: darken($menu_background, 6);;
+  }
+  li.current-menu-ancestor {
+    background-color: darken($menu_background, 2);
+  }
+}
+
+nav#site-navigation ul#mobile-menu {
+  li {
+    li {
+      a {
+        font-size: 13px;
+        padding-left: 36px;
+      }
+      li {
+        a {
+          font-size: 12px;
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+  li.current-menu-item > a {
+    background-color: darken($menu_background, 6);
+  }
+  li.current-menu-ancestor {
+    background-color: darken($menu_background, 2);
+  }
+}
+
+nav#site-navigation a.button-collapse{
+  i {
+    font-size: 36px;
+  }
+  margin-left: 0;
 }
