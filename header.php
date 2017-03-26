@@ -28,7 +28,7 @@
 				$site_logo_src = get_theme_mod( 'srizon_product_logo', '' );
 				$site_logo     = '<span class="no-logo">Upload Logo from customizer</span>';
 				if ( trim( $site_logo_src ) ) {
-					$site_logo = '<img class="site-logo" src="' . $site_logo_src . '" alt="Logo" />';
+					$site_logo = '<span id="site-logo-span"><img class="site-logo" src="' . $site_logo_src . '" alt="Logo" /></span>';
 				}
 				?>
 				<a href="/" id="logo-container" class="brand-logo"><?php echo $site_logo?></a>

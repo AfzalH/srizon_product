@@ -115,7 +115,7 @@ function srizon_product_scripts() {
 	wp_enqueue_style( 'srizon_product-style', get_stylesheet_uri(), array(), $version_no );
 	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons' );
 
-	wp_enqueue_script( 'srizon_product-js', get_template_directory_uri() . '/theme.js', array( 'customize-preview' ), $version_no, true );
+	wp_enqueue_script( 'srizon_product-js', get_template_directory_uri() . '/theme.js', array( 'jquery' ), $version_no, true );
 
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
