@@ -1,3 +1,8 @@
+(function ($) {
+    $('body.single img.full').each(function () {
+        $(this).wrap('<div class="full-width"></div>');
+    });
+})(jQuery);
 /*!
  * Materialize v0.98.1 (http://materializecss.com)
  * Copyright 2014-2015 Materialize

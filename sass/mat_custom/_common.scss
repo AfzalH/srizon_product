@@ -1,0 +1,27 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 8vw;
+  margin-bottom: 8vw;
+  img {
+    width: 100%;
+  }
+}
+
+.site-info {
+  padding: 3vw 0;
+}
+
+.widget-area {
+  margin-top: 20px;
+  padding: 15px 0;
+}

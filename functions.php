@@ -94,8 +94,8 @@ function srizon_product_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'srizon_product' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'srizon_product' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
+		'before_widget' => '<div class="col s12 m6"><section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section></div>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
