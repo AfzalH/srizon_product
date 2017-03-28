@@ -6969,14 +6969,14 @@ article.post .entry-header {
     margin-bottom: 2px; }
   article.post .entry-header .entry-meta {
     font-size: 90%; }
-    article.post .entry-header .entry-meta time.updated {
+    article.post .entry-header .entry-meta time.updated:not(.published) {
       display: none; }
-    article.post .entry-header .entry-meta:hover time.updated {
+    article.post .entry-header .entry-meta:hover time.updated:not(.published) {
       display: inline-block; }
-      article.post .entry-header .entry-meta:hover time.updated:before {
+      article.post .entry-header .entry-meta:hover time.updated:not(.published):before {
         content: "(Updated: ";
         padding-left: 5px; }
-      article.post .entry-header .entry-meta:hover time.updated:after {
+      article.post .entry-header .entry-meta:hover time.updated:not(.published):after {
         content: ")"; }
 
 #comments {
@@ -7073,5 +7073,10 @@ article.post .entry-header {
 
 .form-submit {
   text-align: right; }
+
+article.page .entry-header {
+  margin: 3vw 0; }
+  article.page .entry-header .entry-title {
+    margin-bottom: 2px; }
 
 /*# sourceMappingURL=style.css.map */

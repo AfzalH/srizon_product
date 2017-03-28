@@ -41,16 +41,16 @@ article.post {
     }
     .entry-meta {
       font-size: 90%;
-      time.updated {
+      time.updated:not(.published) {
         display: none;
       }
       &:hover {
-        time.updated {
+        time.updated:not(.published) {
           &:before {
             content: "(Updated: ";
             padding-left: 5px;
           }
-          &:after{
+          &:after {
             content: ")";
           }
           display: inline-block;
