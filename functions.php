@@ -116,8 +116,8 @@ function srizon_product_scripts() {
 	wp_enqueue_style( 'srizon_product-style', get_stylesheet_uri(), array(), $version_no );
 	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons' );
 
-	wp_enqueue_script( 'materialize', get_template_directory_uri() . '/materialize.js', array( 'jquery' ), $version_no, true );
-	wp_enqueue_script( 'srizon_product-js', get_template_directory_uri() . '/theme.js', array( 'jquery' ), $version_no, true );
+	wp_enqueue_script( 'materialize', get_template_directory_uri() . '/materialize.js', array( 'jquery' ), $version_no );
+	wp_enqueue_script( 'srizon_product-js', get_template_directory_uri() . '/theme.js', array( 'jquery' ), $version_no );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -125,7 +125,7 @@ function srizon_product_scripts() {
 	}
 }
 
-add_action( 'wp_enqueue_scripts', 'srizon_product_scripts' );
+add_action( 'wp_enqueue_scripts', 'srizon_product_scripts', 5 );
 
 /**
  * Implement the Custom Header feature.
