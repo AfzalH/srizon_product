@@ -20,7 +20,7 @@ if ( ! $featured_image ) {
 }
 ?>
 <div class="col l12">
-	<div class="card">
+	<div class="card postcard">
 		<div class="card-content">
 			<div class="row">
 				<div class="col m4">

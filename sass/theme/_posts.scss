@@ -2,8 +2,8 @@ nav.posts-navigation {
   @extend nav.post-navigation;
 }
 
-body.blog {
-  .card {
+body.blog, body.archive, body.category {
+  .postcard {
     .card-content {
       @media #{$medium-and-up} {
         padding: 40px;
