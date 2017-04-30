@@ -25,7 +25,7 @@ function srizon_product_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'srizon_product' ),
+		_x( '<span class="screen-reader-text">Posted on </span>%s', 'post date', 'srizon_product' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 

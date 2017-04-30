@@ -1,8 +1,17 @@
-(function ($) {
+jQuery(document).ready(function ($) {
     $('body.single img.full').each(function () {
         $(this).wrap('<div class="full-width"></div>');
     });
-})(jQuery);
+    jQuery('img').each(function () {
+        var $this = jQuery(this);
+        if ($this.data('clickable') == 'yes') {
+            $this.addClass('linked-img');
+            $this.click(function () {
+                window.location = $this.data('url');
+            });
+        }
+    });
+});
 jQuery(document).ready(function () {
     jQuery('ul#primary-menu > li.menu-item-has-children').click(function (e) {
         if (jQuery(this).find('ul').first().css('opacity') < 1) {

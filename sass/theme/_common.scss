@@ -25,3 +25,42 @@ img {
   margin-top: 20px;
   padding: 15px 0;
 }
+
+.screen-reader-text {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.top10 {
+  margin-top: 10px !important;
+}
+
+.top20 {
+  margin-top: 20px !important;
+}
+
+.top30 {
+  margin-top: 30px !important;
+}
+
+.bottom10 {
+  margin-bottom: 10px !important;
+}
+
+.bottom20 {
+  margin-bottom: 20px !important;
+}
+
+.bottom30 {
+  margin-bottom: 30px !important;
+}
+
+hr {
+  border: 0;
+  border-bottom: 3px solid #eeeeee;
+  margin: 30px;
+}
+
+h1, h2, h3 {
+  font-weight: 200;
+}

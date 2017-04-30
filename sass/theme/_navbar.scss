@@ -78,17 +78,23 @@ nav#site-navigation ul#mobile-menu {
   }
 }
 
-nav#site-navigation a.button-collapse{
+nav#site-navigation a.button-collapse {
   i {
     font-size: 36px;
   }
   margin-left: 0;
 }
-span.no-logo{
+
+span.no-logo {
   font-size: 16px;
 }
-img.site-logo{
+
+img.site-logo {
   height: 64px;
   padding: 7px 0;
   width: auto;
+}
+
+#logo-container {
+  height: 64px;
 }

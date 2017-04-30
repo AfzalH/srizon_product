@@ -1,5 +1,5 @@
 /*!
-Theme Name: Srizon Product
+Theme Name: Srizon One
 Theme URI: http://underscores.me/
 Author: Afzal Hossain
 Author URI: https://www.srizon.com
@@ -7,13 +7,13 @@ Description: Showcase Your Software Products
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: srizon_product
+Text Domain: srizon-one
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Srizon Product is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Srizon One is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -41,6 +41,36 @@ img {
 .widget-area {
   margin-top: 20px;
   padding: 15px 0; }
+
+.screen-reader-text {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.top10 {
+  margin-top: 10px !important; }
+
+.top20 {
+  margin-top: 20px !important; }
+
+.top30 {
+  margin-top: 30px !important; }
+
+.bottom10 {
+  margin-bottom: 10px !important; }
+
+.bottom20 {
+  margin-bottom: 20px !important; }
+
+.bottom30 {
+  margin-bottom: 30px !important; }
+
+hr {
+  border: 0;
+  border-bottom: 3px solid #eeeeee;
+  margin: 30px; }
+
+h1, h2, h3 {
+  font-weight: 200; }
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
@@ -143,6 +173,9 @@ img.site-logo {
   padding: 7px 0;
   width: auto; }
 
+#logo-container {
+  height: 64px; }
+
 nav.post-navigation, nav.posts-navigation {
   background-color: transparent;
   box-shadow: none;
@@ -174,21 +207,76 @@ nav.post-navigation, nav.posts-navigation {
         vertical-align: bottom;
         cursor: pointer; }
 
-article.post .entry-header {
-  margin: 3vw 0; }
-  article.post .entry-header .entry-title {
-    margin-bottom: 2px; }
-  article.post .entry-header .entry-meta {
-    font-size: 90%; }
-    article.post .entry-header .entry-meta time.updated:not(.published) {
-      display: none; }
-    article.post .entry-header .entry-meta:hover time.updated:not(.published) {
-      display: inline-block; }
-      article.post .entry-header .entry-meta:hover time.updated:not(.published):before {
-        content: "(Updated: ";
-        padding-left: 5px; }
-      article.post .entry-header .entry-meta:hover time.updated:not(.published):after {
-        content: ")"; }
+body.single-post article.post, body.single-post article.page, body.page article.post, body.page article.page {
+  padding-top: 30px; }
+  @media only screen and (min-width: 601px) {
+    body.single-post article.post, body.single-post article.page, body.page article.post, body.page article.page {
+      padding: 60px; } }
+  body.single-post article.post .entry-meta .entry-date, body.single-post article.page .entry-meta .entry-date, body.page article.post .entry-meta .entry-date, body.page article.page .entry-meta .entry-date {
+    text-transform: uppercase;
+    font-size: 80%; }
+  body.single-post article.post .entry-meta .byline, body.single-post article.post .entry-meta .updated:not(.published), body.single-post article.page .entry-meta .byline, body.single-post article.page .entry-meta .updated:not(.published), body.page article.post .entry-meta .byline, body.page article.post .entry-meta .updated:not(.published), body.page article.page .entry-meta .byline, body.page article.page .entry-meta .updated:not(.published) {
+    display: none; }
+  body.single-post article.post .entry-title, body.single-post article.page .entry-title, body.page article.post .entry-title, body.page article.page .entry-title {
+    margin-bottom: 30px;
+    margin-left: -2px;
+    margin-top: 0; }
+  body.single-post article.post footer.entry-footer, body.single-post article.page footer.entry-footer, body.page article.post footer.entry-footer, body.page article.page footer.entry-footer {
+    display: none; }
+  body.single-post article.post a, body.single-post article.page a, body.page article.post a, body.page article.page a {
+    -webkit-transition: color 0.6s ease;
+    transition: color 0.6s ease; }
+    body.single-post article.post a:hover, body.single-post article.page a:hover, body.page article.post a:hover, body.page article.page a:hover {
+      color: #283593; }
+  body.single-post article.post p, body.single-post article.page p, body.page article.post p, body.page article.page p {
+    color: rgba(0, 0, 0, 0.71);
+    margin-bottom: 20px; }
+    @media only screen and (min-width: 601px) {
+      body.single-post article.post p, body.single-post article.page p, body.page article.post p, body.page article.page p {
+        line-height: 1.8;
+        margin-bottom: 40px; } }
+
+@media only screen and (min-width: 601px) {
+  body.blog .card .card-content {
+    padding: 40px; } }
+
+@media only screen and (min-width: 601px) {
+  body.blog .card article.post {
+    margin-left: 50px; } }
+
+body.blog .card article.post .entry-meta {
+  margin-top: 30px; }
+  @media only screen and (min-width: 601px) {
+    body.blog .card article.post .entry-meta {
+      margin-top: 0; } }
+  body.blog .card article.post .entry-meta .entry-date {
+    text-transform: uppercase;
+    font-size: 80%; }
+  body.blog .card article.post .entry-meta .byline, body.blog .card article.post .entry-meta .updated:not(.published) {
+    display: none; }
+
+body.blog .card article.post .entry-title {
+  margin-bottom: 30px;
+  margin-left: -2px;
+  margin-top: 0; }
+
+body.blog .card article.post .entry-content .more-link {
+  margin-top: 30px;
+  display: inline-block;
+  text-decoration: underline; }
+
+body.blog .card article.post footer.entry-footer {
+  display: none; }
+
+body.blog .card article.post a {
+  -webkit-transition: color 0.6s ease;
+  transition: color 0.6s ease; }
+  body.blog .card article.post a:hover {
+    color: #283593; }
+
+body.blog .card article.post p {
+  color: rgba(0, 0, 0, 0.71);
+  margin-bottom: 20px; }
 
 #comments {
   clear: both;
@@ -285,9 +373,14 @@ article.post .entry-header {
 .form-submit {
   text-align: right; }
 
-article.page .entry-header {
-  margin: 3vw 0; }
+article.page {
+  min-height: 600px;
+  padding-top: 30px; }
+  @media only screen and (min-width: 601px) {
+    article.page {
+      padding: 60px; } }
   article.page .entry-header .entry-title {
-    margin-bottom: 2px; }
+    margin: 0 0 30px 0;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
