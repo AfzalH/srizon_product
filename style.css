@@ -72,6 +72,9 @@ hr {
 h1, h2, h3 {
   font-weight: 200; }
 
+.linked-img {
+  cursor: pointer; }
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -382,5 +385,8 @@ article.page {
   article.page .entry-header .entry-title {
     margin: 0 0 30px 0;
     text-align: center; }
+
+.page-links {
+  word-spacing: 12px; }
 
 /*# sourceMappingURL=style.css.map */
