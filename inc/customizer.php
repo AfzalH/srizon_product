@@ -22,7 +22,7 @@ function srizon_product_customize_register( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'srizon_product_logo', array(
-		'label'    => __( 'Logo', 'srizon_product' ),
+		'label'    => __( 'Logo', 'srizon-one' ),
 		'section'  => 'title_tagline',
 		'settings' => 'srizon_product_logo'
 	) ) );

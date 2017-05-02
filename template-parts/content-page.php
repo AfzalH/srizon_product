@@ -20,7 +20,7 @@
 				the_content();
 
 				wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'srizon_product' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'srizon-one' ),
 					'after'  => '</div>',
 				) );
 				?>
@@ -32,7 +32,7 @@
 					edit_post_link(
 						sprintf(
 						/* translators: %s: Name of current post */
-							esc_html__( 'Edit %s', 'srizon_product' ),
+							esc_html__( 'Edit %s', 'srizon-one' ),
 							the_title( '<span class="screen-reader-text">"', '"</span>', false )
 						),
 						'<span class="edit-link">',

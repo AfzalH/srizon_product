@@ -51,12 +51,12 @@ if ( ! $featured_image ) {
 							<?php
 							the_content( sprintf(
 							/* translators: %s: Name of current post. */
-								wp_kses( __( 'Continue reading %s ...', 'srizon_product' ), array( 'span' => array( 'class' => array() ) ) ),
+								wp_kses( __( 'Continue reading %s ...', 'srizon-one' ), array( 'span' => array( 'class' => array() ) ) ),
 								the_title( '<span class="screen-reader-text">"', '"</span>', false )
 							) );
 
 							wp_link_pages( array(
-								'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'srizon_product' ),
+								'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'srizon-one' ),
 								'after'  => '</div>',
 							) );
 							?>

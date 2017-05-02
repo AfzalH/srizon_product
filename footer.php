@@ -15,9 +15,9 @@
 
 	<footer id="colophon" class="site-footer grey lighten-3" role="contentinfo">
 		<div class="site-info container center-align">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'srizon_product' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'srizon_product' ), 'WordPress' ); ?></a>
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'srizon-one' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'srizon-one' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'srizon_product' ), 'Srizon Product', '<a href="https://www.srizon.com/" rel="designer">Afzal Hossain</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'srizon-one' ), 'Srizon One', '<a href="https://srizon.com/" rel="designer">Afzal Hossain</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
