@@ -116,7 +116,7 @@ function srizon_product_scripts() {
 	wp_enqueue_style( 'srizon_product-style', get_stylesheet_uri(), array(), $version_no );
 	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons' );
 
-	wp_enqueue_script( 'materialize', get_template_directory_uri() . '/materialize.js', array( 'jquery' ), $version_no );
+	wp_enqueue_script( 'materialize', get_template_directory_uri() . '/materialize.min.js', array( 'jquery' ), $version_no );
 	wp_enqueue_script( 'srizon_product-js', get_template_directory_uri() . '/theme.js', array( 'jquery' ), $version_no );
 
 
@@ -152,25 +152,4 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-add_action("pre_get_posts", "custom_front_page");
-function custom_front_page($wp_query){
-	//Ensure this filter isn't applied to the admin area
-	if(is_admin()) {
-		return;
-	}
 
-	if($wp_query->get('page_id') == get_option('page_on_front')):
-
-		$wp_query->set('post_type', 'soft_product');
-		$wp_query->set('page_id', ''); //Empty
-
-		//Set properties that describe the page to reflect that
-		//we aren't really displaying a static page
-		$wp_query->is_page = 0;
-		$wp_query->is_singular = 0;
-		$wp_query->is_post_type_archive = 1;
-		$wp_query->is_archive = 1;
-
-	endif;
-
-}
