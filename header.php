@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
-		<nav id="site-navigation" class="grey lighten-3 main-navigationgrey-text text-darken-2" role="navigation">
+		<nav id="site-navigation" class="nav grey lighten-3 main-navigation grey-text text-darken-2" role="navigation">
 			<div class="nav-wrapper container">
 				<?php
 				$site_logo_src = get_theme_mod( 'srizon_product_logo', '' );
