@@ -110,7 +110,7 @@ nav#site-navigation ul#primary-menu > li.menu-item-has-children {
   nav#site-navigation ul#primary-menu > li.menu-item-has-children > ul {
     display: block;
     position: absolute;
-    width: 150px;
+    width: 220px;
     opacity: 0;
     z-index: -1;
     background-color: #eeeeee;
@@ -118,7 +118,7 @@ nav#site-navigation ul#primary-menu > li.menu-item-has-children {
     left: 0; }
     nav#site-navigation ul#primary-menu > li.menu-item-has-children > ul > li {
       display: block;
-      width: 150px;
+      width: 220px;
       line-height: 40px; }
       nav#site-navigation ul#primary-menu > li.menu-item-has-children > ul > li li {
         line-height: 36px;

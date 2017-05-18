@@ -5,7 +5,7 @@ nav#site-navigation ul#primary-menu {
     > ul {
       display: block;
       position: absolute;
-      width: 150px;
+      width: 220px;
       opacity: 0;
       z-index: -1;
       background-color: $menu_background;
@@ -13,7 +13,7 @@ nav#site-navigation ul#primary-menu {
       left: 0;
       > li {
         display: block;
-        width: 150px;
+        width: 220px;
         line-height: 40px;
         li {
           line-height: 36px;
