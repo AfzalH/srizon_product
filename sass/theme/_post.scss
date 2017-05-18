@@ -12,6 +12,7 @@ nav.post-navigation {
     .nav-previous {
       float: left;
       font-size: 20px;
+      padding-right: 50px;
       a:before {
         content: '\E408';
         font-family: 'Material Icons';
@@ -23,6 +24,7 @@ nav.post-navigation {
     .nav-next {
       float: right;
       font-size: 20px;
+      padding-left: 50px;
       a:after {
         content: '\E409';
         font-family: 'Material Icons';

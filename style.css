@@ -193,7 +193,8 @@ nav.post-navigation, nav.posts-navigation {
       display: inline-block; }
     nav.post-navigation .nav-links .nav-previous, nav.posts-navigation .nav-links .nav-previous {
       float: left;
-      font-size: 20px; }
+      font-size: 20px;
+      padding-right: 50px; }
       nav.post-navigation .nav-links .nav-previous a:before, nav.posts-navigation .nav-links .nav-previous a:before {
         content: '\E408';
         font-family: 'Material Icons';
@@ -202,7 +203,8 @@ nav.post-navigation, nav.posts-navigation {
         cursor: pointer; }
     nav.post-navigation .nav-links .nav-next, nav.posts-navigation .nav-links .nav-next {
       float: right;
-      font-size: 20px; }
+      font-size: 20px;
+      padding-left: 50px; }
       nav.post-navigation .nav-links .nav-next a:after, nav.posts-navigation .nav-links .nav-next a:after {
         content: '\E409';
         font-family: 'Material Icons';
