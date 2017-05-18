@@ -231,11 +231,11 @@ body.single-post article.post, body.single-post article.page, body.page article.
     transition: color 0.6s ease; }
     body.single-post article.post a:hover, body.single-post article.page a:hover, body.page article.post a:hover, body.page article.page a:hover {
       color: #283593; }
-  body.single-post article.post p, body.single-post article.page p, body.page article.post p, body.page article.page p {
+  body.single-post article.post > p, body.single-post article.post > div > p, body.single-post article.page > p, body.single-post article.page > div > p, body.page article.post > p, body.page article.post > div > p, body.page article.page > p, body.page article.page > div > p {
     color: rgba(0, 0, 0, 0.71);
     margin-bottom: 20px; }
     @media only screen and (min-width: 601px) {
-      body.single-post article.post p, body.single-post article.page p, body.page article.post p, body.page article.page p {
+      body.single-post article.post > p, body.single-post article.post > div > p, body.single-post article.page > p, body.single-post article.page > div > p, body.page article.post > p, body.page article.post > div > p, body.page article.page > p, body.page article.page > div > p {
         line-height: 1.8;
         margin-bottom: 40px; } }
 
@@ -277,7 +277,7 @@ body.blog .postcard article.post a, body.archive .postcard article.post a, body.
   body.blog .postcard article.post a:hover, body.archive .postcard article.post a:hover, body.category .postcard article.post a:hover {
     color: #283593; }
 
-body.blog .postcard article.post p, body.archive .postcard article.post p, body.category .postcard article.post p {
+body.blog .postcard article.post > p, body.blog .postcard article.post > div > p, body.archive .postcard article.post > p, body.archive .postcard article.post > div > p, body.category .postcard article.post > p, body.category .postcard article.post > div > p {
   color: rgba(0, 0, 0, 0.71);
   margin-bottom: 20px; }
 

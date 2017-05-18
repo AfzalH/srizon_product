@@ -47,7 +47,7 @@ body.blog, body.archive, body.category {
           color: #283593;
         }
       }
-      p {
+      > p, > div > p {
         color: rgba(0, 0, 0, 0.71);
         margin-bottom: 20px;
       }

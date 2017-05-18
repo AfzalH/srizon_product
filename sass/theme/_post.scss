@@ -68,7 +68,7 @@ body.single-post, body.page {
         color: #283593;
       }
     }
-    p {
+    > p, > div > p {
       color: rgba(0, 0, 0, 0.71);
       margin-bottom: 20px;
       @media #{$medium-and-up}{
