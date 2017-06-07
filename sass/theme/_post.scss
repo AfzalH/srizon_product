@@ -2,6 +2,7 @@ nav.post-navigation {
   background-color: transparent;
   box-shadow: none;
   margin: 2vw 0;
+  width: 100%;
   @include clearfix();
   .nav-links {
     display: block;

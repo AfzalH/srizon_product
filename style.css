@@ -183,6 +183,7 @@ nav.post-navigation, nav.posts-navigation {
   background-color: transparent;
   box-shadow: none;
   margin: 2vw 0;
+  width: 100%;
   content: "";
   display: table;
   table-layout: fixed; }
