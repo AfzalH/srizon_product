@@ -107,7 +107,7 @@ add_action( 'widgets_init', 'srizon_product_widgets_init' );
  * Enqueue scripts and styles.
  */
 function srizon_product_scripts() {
-	$dev        = true;
+	$dev        = false;
 	$version_no = '1.0.0';
 	if ( $dev ) {
 		$version_no = microtime( true );
