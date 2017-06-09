@@ -2,6 +2,7 @@ jQuery(document).ready(function ($) {
     $('body.single img.full').each(function () {
         $(this).wrap('<div class="full-width"></div>');
     });
+    jQuery('.search-submit').addClass('btn');
     jQuery('img').each(function () {
         var $this = jQuery(this);
         if ($this.data('clickable') == 'yes') {
