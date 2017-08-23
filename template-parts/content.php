@@ -11,12 +11,15 @@ if ( ! isset( $GLOBALS['lorem'] ) ) {
 } else {
 	$GLOBALS['lorem'] ++;
 }
-$featured_image = get_the_post_thumbnail( null, 'full', array(
+$featured_image = get_the_post_thumbnail( null, 'medium', array(
 	'data-clickable' => 'yes',
 	'data-url'       => esc_url( get_permalink() )
 ) );
 if ( ! $featured_image ) {
 	$featured_image = '<img src="http://lorempixel.com/800/600/nature/' . $GLOBALS['lorem'] . '" data-clickable="yes" data-url="' . esc_url( get_permalink() ) . '">';
+}
+else {
+	$featured_image = str_replace( 'sizes="(max-width: 300px) 100vw, 300px"', 'sizes="auto"', $featured_image );
 }
 ?>
 <div class="col l12">
