@@ -117,6 +117,7 @@ function srizon_product_scripts() {
 	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons' );
 
 	wp_enqueue_script( 'materialize', get_template_directory_uri() . '/materialize.min.js', array( 'jquery' ), $version_no );
+	wp_enqueue_script( 'lazysizes', get_template_directory_uri() . '/lazysizes.min.js', null, $version_no );
 	wp_enqueue_script( 'srizon_product-js', get_template_directory_uri() . '/theme.js', array( 'jquery' ), $version_no );
 
 

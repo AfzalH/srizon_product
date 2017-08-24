@@ -9,7 +9,7 @@
 
 ?>
 <div class="row">
-	<div class="col l12">
+	<div class="col s12">
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title thin">', '</h1>' ); ?>
