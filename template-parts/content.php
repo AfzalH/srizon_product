@@ -28,12 +28,12 @@ else {
 	<div class="card postcard">
 		<div class="card-content">
 			<div class="row">
-				<div class="col m4">
+				<div class="col m4 s12">
 					<div class="featured-image">
 						<?php echo $featured_image; ?>
 					</div>
 				</div>
-				<div class="col m8">
+				<div class="col m8 s12">
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<header class="entry-header">
 							<?php
